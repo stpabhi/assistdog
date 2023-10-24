@@ -9,7 +9,7 @@ import (
 
 	"github.com/cucumber/godog"
 
-	"github.com/rdumont/assistdog/defaults"
+	"github.com/stpabhi/assistdog/defaults"
 )
 
 var defaultParsers = map[interface{}]ParseFunc{

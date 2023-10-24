@@ -1,7 +1,7 @@
-GOCMD=$(if $(shell which richgo),richgo,go)
+build:
+	go build ./...
+.PHONY: build
 
 test:
-	$(GOCMD) test -cover ./...
-
-test-watch:
-	reflex -s --decoration=none -r \.go$$ -- make test
+	go test -race -cover ./...
+.PHONY: test
